@@ -1,130 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
     <!-- Breakpoint CSS -->
-    <link rel="stylesheet" href="breakpoints.css">
+    <link rel="stylesheet" href="breakpoints.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <header>
       <nav class="navbar navbar-expand-md bg-white">
-         <div class="container">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.svg" alt="Insure Logo"
+          /></a>
 
-            <!-- LOGO -->
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Insure Logo"></a>
+          <!-- TOGGLE BUTTON FOR SMALL SCREENS -->
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <!-- TOGGLE BUTTON FOR SMALL SCREENS -->
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-              <span class="navbar-toggler-icon"></span>
+          <!-- TO HIDE NABAR ON SMALL SCREENS -->
+          <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav text-uppercase">
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">How we work</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-outline-dark rounded-0 border-2 fw-bold text-uppercase"
+            >
+              View Plans
             </button>
-
-            <!-- TO HIDE NABAR ON SMALL SCREENS -->
-            <div class="collapse navbar-collapse justify-content-end" id="nav">
-              
-              <ul class="navbar-nav text-uppercase">
-                <li class="nav-item pe-4">
-                  <a class="nav-link" href="#">How we work</a>
-                </li>
-                <li class="nav-item pe-4">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item pe-4">
-                  <a class="nav-link" href="#">Account</a>
-                </li>
-              </ul>
-                <button class="btn btn-outline-dark rounded-0 border-2 fw-bold text-uppercase">View Plans</button>
-            </div>
-         </div>
+          </div>
+        </div>
       </nav>
     </header>
-    
+
     <main>
+      <!-- INTRO SECTION -->
+      <section class="bg-dark position-relative">
+
+        <!-- Background graphics -->
+        <img
+          class="img-fluid position-absolute top-50 start-0 w-50"
+          src="images/bg-pattern-intro-left-desktop.svg"
+          alt="background-graphic"
+        />
+        <img
+          class="img-fluid position-absolute top-0 end-0"
+          src="images/bg-pattern-intro-right-desktop.svg"
+          alt="background-graphic"
+        />
+
+        <div class="container py-5">
+
+          <div class="row py-3">
+            <!-- Intro text -->
+            <div class="text-box text-white col-6 py-5">
+              <h1 class="fs-heading-1 lh-1">
+                Humanizing <br />
+                your insurance.
+              </h1>
+              <p class="py-3">
+                Get your life insurance coverage easier and faster. We blend our
+                expertise and technology to help you find the plan that’s right
+                for you. Ensure you and your loved ones are protected.
+              </p>
+              <button class="btn btn-outline-light rounded-0 border-2 text-uppercase">
+                View Plans
+              </button>
+            </div>
+
+            <!-- Intro Image -->
+            <div class="position-relative col-6">
+              <img
+                class="img-fluid w-20 position-absolute"
+                src="images/image-intro-desktop.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
       
-
-
-
     </main>
-    
-    <footer>
-    
-    </footer>
 
-    How we work
-    Blog
-    Account
-    View plans
-  
-    Humanizing your insurance.
-  
-    Get your life insurance coverage easier and faster. We blend our expertise 
-    and technology to help you find the plan that’s right for you. Ensure you 
-    and your loved ones are protected.
-  
-    View plans
-  
-    We’re different
-  
-    Snappy Process
-  
-    Our application process can be completed in minutes, not hours. Don’t get 
-    stuck filling in tedious forms.
-  
-    Affordable Prices
-  
-    We don’t want you worrying about high monthly costs. Our prices may be low, 
-    but we still offer the best coverage possible.
-  
-    People First
-  
-    Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-    sure you’re covered when you need it.
-  
-    Find out more about how we work
-  
-    How we work
-  
-    Our company
-  
-    How we work
-    Why Insure?
-    View plans
-    Reviews
-  
-    Help me
-  
-    FAQ
-    Terms of use
-    Privacy policy
-    Cookies
-  
-    Contact
-  
-    Sales
-    Support
-    Live chat
-  
-    Others
-  
-    Careers
-    Press
-    Licenses
-    
+    <footer></footer>
+
+    View plans We’re different Snappy Process Our application process can be
+    completed in minutes, not hours. Don’t get stuck filling in tedious forms.
+    Affordable Prices We don’t want you worrying about high monthly costs. Our
+    prices may be low, but we still offer the best coverage possible. People
+    First Our plans aren’t full of conditions and clauses to prevent payouts. We
+    make sure you’re covered when you need it. Find out more about how we work
+    How we work Our company How we work Why Insure? View plans Reviews Help me
+    FAQ Terms of use Privacy policy Cookies Contact Sales Support Live chat
+    Others Careers Press Licenses
 
     <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
