@@ -17,6 +17,10 @@ h1,h2,h3,h4,h5 {
     font-size: 55px;
 }
 
+.fs-heading-3 {
+    font-size: 45px;
+}
+
 .c-color-dv {
     color: hsl(256, 26%, 20%);
 }
