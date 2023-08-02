@@ -9,6 +9,10 @@ h1,h2,h3,h4,h5 {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+}
+
 .fs-heading-1 {
     font-size: 70px;
 }
