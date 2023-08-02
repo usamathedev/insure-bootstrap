@@ -1,0 +1,31 @@
+body {
+    font-size: 16px;
+    font-family: "Karla", Arial, Helvetica, sans-serif;
+}
+
+
+h1,h2,h3,h4,h5 {
+    font-family: "DM Serif Display", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+
+.c-color-dv {
+    color: hsl(256, 26%, 20%);
+}
+
+.c-color-gb {
+    color: hsl(216, 30%, 68%);
+}
+
+.c-color-vdv {
+    color: hsl(270, 9%, 17%);
+}
+
+.c-color-dgv {
+    color: hsl(273, 4%, 51%);
+}
+
+.c-color-vlg {
+    color: Very Light Gray: hsl(0, 0%, 98%);
+}
