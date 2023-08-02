@@ -13,6 +13,10 @@ h1,h2,h3,h4,h5 {
     font-size: 70px;
 }
 
+.fs-heading-2 {
+    font-size: 55px;
+}
+
 .c-color-dv {
     color: hsl(256, 26%, 20%);
 }
@@ -33,17 +37,18 @@ h1,h2,h3,h4,h5 {
     color:hsl(0, 0%, 98%);; 
 }
 
-h1 {
-    position: relative;
-}
-
-h1::before {
+.heading-line::before{
     content: "";
     width: 150px;
-    background-color:  hsl(0,0%, 98%);
+    background-color: hsl(273, 4%, 51%);
     height: 1px;
     position: absolute;
     top: -40px;
     left: 0;
     z-index: 2;
+}
+
+
+.mt-10 {
+    margin-top: 350px;
 }
