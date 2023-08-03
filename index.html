@@ -21,6 +21,9 @@
       
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Breakpoints CSS  -->
+    <link rel="stylesheet" href="breakpoint.css">
   </head>
   <body>
     <header>
@@ -62,14 +65,14 @@
 
     <main>
       <!-- INTRO SECTION -->
-      <section class="bg-dark position-relative">
+      <section class="bg-dark position-relative" id="intro">
         <!-- Background graphics -->
         <img
           class="img-fluid position-absolute top-50 start-0 h-75"
           src="images/bg-pattern-intro-left-desktop.svg"
           alt="background-graphic" />
         <img
-          class="img-fluid position-absolute top-0 end-0 h-75 z-3"
+          class="img-fluid position-absolute top-0 end-0 h-75 d- z-3"
           src="images/bg-pattern-intro-right-desktop.svg"
           alt="background-graphic" />
 
@@ -77,7 +80,7 @@
           <div class="row py-3">
             <!-- Intro text -->
             <div class="text-box text-white col-md-6 py-5">
-              <h1 class="heading-line fs-heading-1 lh-1 position-relative">
+              <h1 class="heading-line lh-1 position-relative">
                 Humanizing <br />
                 your insurance.
               </h1>
@@ -105,9 +108,9 @@
 
       <!-- WE'RE DIFFERENT SECTION -->
 
-      <section class="container mt-10 pb-5">
+      <section class="container mt-10 pb-5" id="why-us">
         <h2
-          class="heading-line section-heading-dark fs-heading-2 position-relative lh-1">
+          class="section-heading-dark position-relative lh-1">
           We're different.
         </h2>
 
@@ -153,13 +156,13 @@
       <!-- HOW WE WORK SECTION -->
 
       <section
-        class="container bg-dark py-5 px-5 position-relative overflow-hidden mb-5">
+        class="container bg-dark py-5 px-5 position-relative overflow-hidden mb-5" id="cta">
         <img
           class="position-absolute top-0 end-0 img-fluid h-100"
           src="images/bg-pattern-how-we-work-desktop.svg"
           alt />
         <div class="container row justify-content-between">
-          <h3 class="fs-heading-3 lh-1 c-color-vlg col-md-8 z-2">
+          <h3 class="lh-1 c-color-vlg col-md-8 z-2">
             Find out more <br />
             about how we work
           </h3>
