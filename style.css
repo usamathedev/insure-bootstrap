@@ -13,15 +13,15 @@ a {
     text-decoration: none;
 }
 
-.fs-heading-1 {
+#intro h1 {
     font-size: 70px;
 }
 
-.fs-heading-2 {
+#why-us h2 {
     font-size: 55px;
 }
 
-.fs-heading-3 {
+#cta h3 {
     font-size: 45px;
 }
 
@@ -45,7 +45,8 @@ a {
     color:hsl(0, 0%, 98%);; 
 }
 
-.heading-line::before{
+#intro h1::before,
+#why-us h2::before{
     content: "";
     width: 150px;
     background-color: hsl(273, 4%, 51%);
@@ -60,3 +61,10 @@ a {
 .mt-10 {
     margin-top: 350px;
 }
+
+
+@media (max-width: 576px) {
+    body {
+      font-size: 14px;
+    }
+  }
