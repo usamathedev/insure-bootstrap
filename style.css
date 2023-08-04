@@ -23,7 +23,7 @@ a {
 
 /* INTRO SECTION */
 
-#intro .container {
+#intro div.position-relative {
     background-color: hsl(256, 26%, 20%);
 }
 
@@ -107,7 +107,7 @@ a {
 }
 
 .mt-10 {
-    margin-top: 350px;
+    margin-top: 300px;
 }
 
 @media (max-width: 768px) {

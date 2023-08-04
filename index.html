@@ -68,7 +68,7 @@
       <section class="position-relative" id="intro">
         <!-- Background graphics for desktop -->
         <img
-          class="img-fluid position-absolute top-50 start-0 h-25 d-none"
+          class="img-fluid position-absolute top-50 start-0 h-25 d-none d-md-block"
           src="images/bg-pattern-intro-left-desktop.svg"
           alt="background-graphic" />
         <img
@@ -82,18 +82,18 @@
 
         <div class="position-relative">
           <!-- Background graphics for mobile -->
-          <img class="position-absolute top-0 left-0 d-md-none"
+          <img class="position-absolute top-0 left-0 d-lg-none"
             src="images/bg-pattern-intro-left-mobile.svg"
             alt="background-graphic">
-          <img class="position-absolute bottom-0 end-0 d-md-none"
+          <img class="position-absolute bottom-0 end-0 d-lg-none"
             src="images/bg-pattern-intro-right-mobile.svg"
             alt="background-graphic">
 
           <div
-            class="container m-md-auto m-0 mw-100 py-5 text-center text-md-start lh-lg c-color-vlg">
-
+            class="container py-5 text-center text-md-start lh-lg c-color-vlg">
+          <div class="row">
             <!-- Intro text -->
-            <div class="text-box text-white col-12 col-md-6 py-5">
+            <div class="text-box text-white col-12 col-md-7 col-lg-6 py-5">
               <h1 class="lh-1 position-relative">
                 Humanizing <br />
                 your insurance.
@@ -110,19 +110,22 @@
             </div>
 
             <!-- Intro Image Desktop -->
-            <div class="col-md-6 d-md-block d-none">
+            <div class="col-md-5 col-lg-5 position-relative d-md-block d-none">
               <img
-                class="img-fluid w-auto position-absolute"
+                class="img-fluid position-absolute top-0"
                 src="images/image-intro-desktop.jpg"
                 alt="Intro-Image" />
             </div>
+
+          </div>
+
           </div>
         </div>
       </section>
 
       <!-- WE'RE DIFFERENT SECTION -->
 
-      <section class="container mt-10 pb-5 text-center" id="why-us">
+      <section class="container mt-10 pb-5 text-center text-md-start" id="why-us">
         <h2
           class="section-heading-dark position-relative lh-1">
           We're different.
@@ -170,30 +173,30 @@
       <!-- HOW WE WORK SECTION -->
 
       <section
-        class="container text-center position-relative mb-5"
+        class="container text-center text-md-start position-relative mb-5 "
         id="cta">
 
         <!-- Background Graphic Desktop -->
         <img
-          class="position-absolute top-0 end-0 img-fluid h-100 z-0 d-none"
+          class="position-absolute top-0 end-0 img-fluid h-100 z-0 d-none d-md-block"
           src="images/bg-pattern-how-we-work-desktop.svg"
           alt="background-graphic" />
 
         <div
-          class=" container row osition-relative justify-content-center m-0  py-5">
+          class=" container row justify-content-center align-items-center m-0  py-5 ">
 
           <!-- Background Graphic Mobile -->
-          <img class="position-absolute top-0 end-0 z-1 h-100 w-auto"
-          src="images/bg-pattern-how-we-work-mobile.svg"
-          alt="background-graphic">
+          <img class="position-absolute top-0 end-0 z-1 h-100 w-auto d-md-none"
+            src="images/bg-pattern-how-we-work-mobile.svg"
+            alt="background-graphic">
 
-          <h3 class="lh-1 c-color-vlg col-12 z-2">
+          <h3 class="lh-1 c-color-vlg col-md-8 z-2">
             Find out more <br />
             about how we work
           </h3>
 
           <button
-            class="btn btn-outline-light rounded-0 border-2 text-uppercase col-md-4 w-auto px-4 mt-4 py-2 z-2">
+            class="btn btn-outline-light rounded-0 border-2 text-uppercase col-md-4 w-auto px-4 mt-4 mt-md-0 py-2 z-2">
             How we work
           </button>
         </div>
@@ -208,14 +211,14 @@
           src="images/bg-pattern-footer-desktop.svg"
           alt="background-graphic" />
 
-        <div class="row pt-3 z-2 text-center">
+        <div class="row pt-3 z-2 text-center text-md-start">
 
-          <div class="col-12 z-2 mb-4">
+          <div class="col-12 col-md z-2 mb-4">
             <img src="images/logo.svg" alt="logo" />
           </div>
 
-          <div class="col-12 pb-3">
-            <div class="d-flex align-items-center justify-content-center">
+          <div class="col-12 col-md pb-3">
+            <div class="d-flex align-items-center  justify-content-center justify-content-md-end">
               <img class="pe-3" src="images/icon-facebook.svg"
                 alt="facebook icon" />
               <img class="pe-3" src="images/icon-twitter.svg" alt="twitter" />
@@ -228,10 +231,10 @@
         <hr class="link-dark" />
       </div>
 
-      <div class="container py-3 text-center">
+      <div class="container py-3 text-center text-md-start">
 
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-md">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase z-2">Our Company</p>
             <ul class="list-unstyled fw-bold text-uppercase z-2">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">Our Policy</a></li>
@@ -241,7 +244,7 @@
             </ul>
           </div>
 
-          <div class="col-12">
+          <div class="col-12 col-md">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase">Help me</p>
             <ul class="list-unstyled fw-bold text-uppercase">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">FAQ</a></li>
@@ -251,7 +254,7 @@
             </ul>
           </div>
 
-          <div class="col-12">
+          <div class="col-12 col-md">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase">Contact</p>
             <ul class="list-unstyled fw-bold text-uppercase">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">Sales</a></li>
@@ -260,7 +263,7 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col-12 col-md">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase">Others</p>
             <ul class="list-unstyled fw-bold text-uppercase">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">Careers</a></li>
