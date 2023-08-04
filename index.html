@@ -18,7 +18,7 @@
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous" />
-      
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -65,22 +65,36 @@
 
     <main>
       <!-- INTRO SECTION -->
-      <section class="bg-dark position-relative" id="intro">
-        <!-- Background graphics -->
+      <section class="position-relative" id="intro">
+        <!-- Background graphics for desktop -->
         <img
-          class="img-fluid position-absolute top-50 start-0 h-75"
+          class="img-fluid position-absolute top-50 start-0 h-25 d-none"
           src="images/bg-pattern-intro-left-desktop.svg"
           alt="background-graphic" />
         <img
-          class="img-fluid position-absolute top-0 end-0 h-75 d- z-3"
+          class="img-fluid position-absolute top-0 end-0 h-25 d- z-3 d-none d-md-block"
           src="images/bg-pattern-intro-right-desktop.svg"
           alt="background-graphic" />
 
-        <div class="container py-5">
-          <div class="row py-3">
+        <!-- Intro Image for Moile -->
+        <img class="img-fluid w-100 d-md-none"
+          src="images/image-intro-mobile.jpg" alt="Intro-Image">
+
+        <div class="position-relative">
+          <!-- Background graphics for mobile -->
+          <img class="position-absolute top-0 left-0 d-md-none"
+            src="images/bg-pattern-intro-left-mobile.svg"
+            alt="background-graphic">
+          <img class="position-absolute bottom-0 end-0 d-md-none"
+            src="images/bg-pattern-intro-right-mobile.svg"
+            alt="background-graphic">
+
+          <div
+            class="container m-md-auto m-0 mw-100 py-5 text-center text-md-start lh-lg c-color-vlg">
+
             <!-- Intro text -->
-            <div class="text-box text-white col-md-6 py-5">
-              <h1 class="heading-line lh-1 position-relative">
+            <div class="text-box text-white col-12 col-md-6 py-5">
+              <h1 class="lh-1 position-relative">
                 Humanizing <br />
                 your insurance.
               </h1>
@@ -95,10 +109,10 @@
               </button>
             </div>
 
-            <!-- Intro Image -->
-            <div class="position-relative col-md-6 d-sm-none d-md-block">
+            <!-- Intro Image Desktop -->
+            <div class="col-md-6 d-md-block d-none">
               <img
-                class="img-fluid w-20 position-absolute"
+                class="img-fluid w-auto position-absolute"
                 src="images/image-intro-desktop.jpg"
                 alt="Intro-Image" />
             </div>
@@ -108,43 +122,43 @@
 
       <!-- WE'RE DIFFERENT SECTION -->
 
-      <section class="container mt-10 pb-5" id="why-us">
+      <section class="container mt-10 pb-5 text-center" id="why-us">
         <h2
           class="section-heading-dark position-relative lh-1">
           We're different.
         </h2>
 
         <div class="row pt-5 lh-sm">
-          <div class="col-md">
+          <div class="col-md mb-5">
             <img
               class="pb-2 img-fluid"
               src="images/icon-snappy-process.svg"
               alt />
-            <h4 class="py-2">Snappy Process</h4>
+            <h4 class="py-2 fw-bold">Snappy Process</h4>
             <p>
               Our application process can be completetd in minutes, not hours.
               Don't get stuck filling in tedious forms.
             </p>
           </div>
 
-          <div class="col-md">
+          <div class="col-md mb-5">
             <img
               class="pb-2 img-fluid"
               src="images/icon-snappy-process.svg"
               alt />
-            <h4 class="py-2">Affordable Prices</h4>
+            <h4 class="py-2 fw-bold">Affordable Prices</h4>
             <p>
               We don’t want you worrying about high monthly costs. Our prices
               may be low, but we still offer the best coverage possible.
             </p>
           </div>
 
-          <div class="col-md">
+          <div class="col-md mb-5">
             <img
               class="pb-2 img-fluid"
               src="images/icon-snappy-process.svg"
               alt />
-            <h4 class="py-2">People First</h4>
+            <h4 class="py-2 fw-bold">People First</h4>
             <p>
               Our plans aren’t full of conditions and clauses to prevent
               payouts. We make sure you’re covered when you need it.
@@ -156,26 +170,37 @@
       <!-- HOW WE WORK SECTION -->
 
       <section
-        class="container bg-dark py-5 px-5 position-relative overflow-hidden mb-5" id="cta">
+        class="container text-center position-relative mb-5"
+        id="cta">
+
+        <!-- Background Graphic Desktop -->
         <img
-          class="position-absolute top-0 end-0 img-fluid h-100"
+          class="position-absolute top-0 end-0 img-fluid h-100 z-0 d-none"
           src="images/bg-pattern-how-we-work-desktop.svg"
-          alt />
-        <div class="container row justify-content-between">
-          <h3 class="lh-1 c-color-vlg col-md-8 z-2">
+          alt="background-graphic" />
+
+        <div
+          class=" container row osition-relative justify-content-center m-0  py-5">
+
+          <!-- Background Graphic Mobile -->
+          <img class="position-absolute top-0 end-0 z-1 h-100 w-auto"
+          src="images/bg-pattern-how-we-work-mobile.svg"
+          alt="background-graphic">
+
+          <h3 class="lh-1 c-color-vlg col-12 z-2">
             Find out more <br />
             about how we work
           </h3>
 
           <button
-            class="btn btn-outline-light rounded-0 border-2 text-uppercase col-md-4 w-auto px-4 py-2 lh-1 align-self-center z-2">
+            class="btn btn-outline-light rounded-0 border-2 text-uppercase col-md-4 w-auto px-4 mt-4 py-2 z-2">
             How we work
           </button>
         </div>
       </section>
     </main>
 
-    <footer class="position-relative bg-light">
+    <footer class="position-relative bg-light pt-5">
       <div class="container">
 
         <img
@@ -183,18 +208,18 @@
           src="images/bg-pattern-footer-desktop.svg"
           alt="background-graphic" />
 
-        <div class="row pt-3 z-2 justify-content-between">
+        <div class="row pt-3 z-2 text-center">
 
-          <div class="col z-2">
+          <div class="col-12 z-2 mb-4">
             <img src="images/logo.svg" alt="logo" />
           </div>
 
-          <div class="col">
-            <div class="d-flex align-items-center justify-content-end">
-              <img class="pe-2" src="images/icon-facebook.svg"
+          <div class="col-12 pb-3">
+            <div class="d-flex align-items-center justify-content-center">
+              <img class="pe-3" src="images/icon-facebook.svg"
                 alt="facebook icon" />
-              <img class="pe-2" src="images/icon-twitter.svg" alt="twitter" />
-              <img class="pe-2" src="images/icon-pinterest.svg" alt="pinterest" />
+              <img class="pe-3" src="images/icon-twitter.svg" alt="twitter" />
+              <img class="pe-3" src="images/icon-pinterest.svg" alt="pinterest" />
               <img src="images/icon-instagram.svg" alt="icon-instagram" />
             </div>
           </div>
@@ -203,10 +228,10 @@
         <hr class="link-dark" />
       </div>
 
-      <div class="container mt-5 pt-5">
+      <div class="container py-3 text-center">
 
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase z-2">Our Company</p>
             <ul class="list-unstyled fw-bold text-uppercase z-2">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">Our Policy</a></li>
@@ -216,7 +241,7 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col-12">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase">Help me</p>
             <ul class="list-unstyled fw-bold text-uppercase">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">FAQ</a></li>
@@ -226,7 +251,7 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col-12">
             <p class="c-color-dgv mb-4 fw-bold text-uppercase">Contact</p>
             <ul class="list-unstyled fw-bold text-uppercase">
               <li class="pb-2 z-2"><a class="c-color-dv" href="#">Sales</a></li>

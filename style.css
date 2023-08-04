@@ -3,6 +3,12 @@ body {
     font-family: "Karla", Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+}
+
 
 h1,h2,h3,h4,h5 {
     font-family: "DM Serif Display", 'Times New Roman', Times, serif;
@@ -13,16 +19,52 @@ a {
     text-decoration: none;
 }
 
+
+
+/* INTRO SECTION */
+
+#intro .container {
+    background-color: hsl(256, 26%, 20%);
+}
+
 #intro h1 {
     font-size: 70px;
 }
+
+@media (max-width: 768px) {
+    #intro h1 {
+      font-size: 48px;
+    }
+}
+
+
+/* WHY US SECTION */
 
 #why-us h2 {
     font-size: 55px;
 }
 
+@media (max-width: 768px) {
+    #why-us h2 {
+      font-size: 40px;
+    }
+}
+
+
+
+/* CTA SECTION */
+#cta div{
+    background-color: hsl(256, 26%, 20%);
+}
+
 #cta h3 {
     font-size: 45px;
+}
+
+@media (max-width: 768px) {
+    #cta h3 {
+      font-size: 32px;
+    }
 }
 
 .c-color-dv {
@@ -57,14 +99,21 @@ a {
     z-index: 2;
 }
 
+@media (max-width: 768px) {
+    #intro h1::before,
+    #why-us h2::before{
+        left: calc(50% - 75px);
+    }
+}
 
 .mt-10 {
     margin-top: 350px;
 }
 
-
-@media (max-width: 576px) {
-    body {
-      font-size: 14px;
+@media (max-width: 768px) {
+    .mt-10{
+        margin-top: 180px;
     }
-  }
+}
+
+
