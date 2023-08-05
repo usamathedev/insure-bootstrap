@@ -74,6 +74,10 @@ a {
 
 
 /* COLORS  */
+.c-color-dv{
+    color: hsl(256, 26%, 20%);
+}
+
 .c-color-dgv {
     color: hsl(273, 4%, 51%);
 }
