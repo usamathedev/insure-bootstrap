@@ -3,12 +3,6 @@ body {
     font-family: "Karla", Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-    body {
-      font-size: 16px;
-    }
-}
-
 
 h1,h2,h3,h4,h5 {
     font-family: "DM Serif Display", 'Times New Roman', Times, serif;
@@ -23,7 +17,7 @@ a {
 
 /* INTRO SECTION */
 
-#intro div.position-relative {
+#intro div:first-of-type {
     background-color: hsl(256, 26%, 20%);
 }
 
@@ -39,11 +33,22 @@ a {
 
 
 /* WHY US SECTION */
+#why-us {
+    margin-top: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .#why-us{
+        margin-top: 150px;
+    }
+}
+
 
 #why-us h2 {
     font-size: 55px;
 }
-
+ /* To change font size for smaller screens */
 @media (max-width: 768px) {
     #why-us h2 {
       font-size: 40px;
@@ -67,18 +72,8 @@ a {
     }
 }
 
-.c-color-dv {
-    color: hsl(256, 26%, 20%);
-}
 
-.c-color-gb {
-    color: hsl(216, 30%, 68%);
-}
-
-.c-color-vdv {
-    color: hsl(270, 9%, 17%);
-}
-
+/* COLORS  */
 .c-color-dgv {
     color: hsl(273, 4%, 51%);
 }
@@ -87,6 +82,8 @@ a {
     color:hsl(0, 0%, 98%);; 
 }
 
+
+/* PSEUDO ELEMENT (little line on top of section headings */
 #intro h1::before,
 #why-us h2::before{
     content: "";
@@ -105,15 +102,3 @@ a {
         left: calc(50% - 75px);
     }
 }
-
-.mt-10 {
-    margin-top: 300px;
-}
-
-@media (max-width: 768px) {
-    .mt-10{
-        margin-top: 180px;
-    }
-}
-
-
