@@ -39,7 +39,7 @@ a {
 
 
 @media (max-width: 768px) {
-    .#why-us{
+    #why-us{
         margin-top: 150px;
     }
 }
